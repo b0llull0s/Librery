@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/1b73c2ec6e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Assets/book-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header role="banner">
+        <div class="header-logo fit-content">
+            <img src="Assets/book-logo-2.png" alt="A pile of books" height="60" width="60" />
+        </div>
+        <div id="header-h1-container">
+            <h1 id="header-h1">Librery</h1>
+            <div id="motto-container">
+                <div id="header-vertical-bar" aria-hidden="true"></div>
+                <p id="header-subtitle">Your Open Source Library</p>
+            </div>
+        </div>
+        <input type="checkbox" name="theme-checkbox" id="theme-checkbox" aria-label="Toggle dark mode theme">
+        <label for="theme-checkbox" id="theme-checkbox-label" title="Change theme">
+            <span id="theme-checkbox-span" class="material-symbols-outlined">dark_mode</span>
+        </label>
+    </header>
+    <main role="main">
+        <nav id="toolbar" aria-label="Library tools">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search books..." aria-label="Search books" />
+                <button id="search-btn" aria-label="Search">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <button id="add-book-btn" class="material-symbols-outlined-btn" title="Add new book" aria-label="Add new book">
+                <span class="material-symbols-outlined">add_circle</span>
+            </button>
+        </nav>
+        <section id="library-container" aria-live="polite">
+        </section>
+        <dialog id="modal-container" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+            <div id="modal-header">
+                <h2 id="modal-title">Add Book</h2>
+                <button id="close-modal-btn" class="material-symbols-outlined-btn" aria-label="Close modal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <small id="modal-description">Insert Book Title, Author, Year, Number of Pages, if you have read it, and an optional cover.</small>
+            <div id="modal-form-container">
+                <form action="" id="add-book-form" method="dialog">
+                    <div class="form-wrapper">
+                        <label for="book-title" class="modal-form-label">Title: </label>
+                        <input type="text" name="book-title" id="book-title" class="modal-form-input" maxlength="30" placeholder="Title" required aria-required="true">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="book-author" class="modal-form-label">Author: </label>
+                        <input type="text" name="book-author" id="book-author" class="modal-form-input" maxlength="30" placeholder="Author" required aria-required="true">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="book-year" class="modal-form-label">Year: </label>
+                        <input type="number" name="book-year" id="book-year" class="modal-form-input" max="9999" min="-12000" placeholder="Year" required aria-required="true">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="number-category" class="modal-form-label">Category: </label>
+                        <input type="text" name="book-category" id="book-category" class="modal-form-input" maxlength="30"
+                            placeholder="Category" required aria-required="true">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="number-of-pages" class="modal-form-label">Number of Pages: </label>
+                        <input type="number" name="number-of-pages" id="number-of-pages" class="modal-form-input" max="9999" min="1" placeholder="Number of Pages" required aria-required="true">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="book-cover-input" id="book-cover-input-label" class="modal-form-label">Cover
+                            <small>(optional)</small>:</label>
+                        <input type="file" name="book-cover" id="book-cover-input" accept=".png, .jpg, .jpeg" aria-describedby="book-cover-description">
+                        <small id="book-cover-description" class="visually-hidden">Accepts .png, .jpg, or .jpeg files.</small>
+                    </div>
+                    <div class="form-wrapper" id="have-read-container">
+                        <fieldset>
+                            <legend>Have you read it?</legend>
+                            <label for="have-read-yes-radio">
+                                <input type="radio" id="have-read-yes-radio" name="have-read" value="Yes" required />
+                                YES
+                            </label>
+                            <label for="have-read-no-radio">
+                                <input type="radio" id="have-read-no-radio" name="have-read" value="No" />
+                                NO
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div id="modal-buttons-container">
+                        <button type="reset" id="modal-cancel-btn" class="modal-btn" aria-label="Cancel form">CANCEL</button>
+                        <button type="submit" id="modal-submit-btn" class="modal-btn" aria-label="Submit form">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </main>
+    <footer role="contentinfo">
+        <ul class="footer-ul column">
+            <li class="footer-ul-li"><small><b>b0llull0s 2024</b></small></li>
+            <li class="footer-ul-li"><small>Made With Love.</small></li>
+        </ul>
+        <address>
+            <ul class="footer-ul">
+                <li class="footer-ul-li">
+                    <a href="https://github.com/b0llull0s" class="footer-anchor" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </li>
+                <li class="footer-ul-li">
+                    <a href="#my_linkedIn_profile" class="footer-anchor" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </footer>
+</body>
+</html>
