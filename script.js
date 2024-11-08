@@ -297,7 +297,9 @@ function refreshLibrary() {
   });
   console.log('Library refreshed.')
 };
-//////
+
+// Search Bar NEED FIXING
+
 const searchBar = document.getElementById('search-bar');
 
 // Listen for user input in the search bar
