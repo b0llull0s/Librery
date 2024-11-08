@@ -307,7 +307,7 @@ searchBar.addEventListener('input', function () {
     const query = searchBar.value.toLowerCase();
     
     // Select all existing book cards
-    const allBooks = document.querySelectorAll('.book-card'); 
+    const allBooks = document.querySelectorAll('.book-card, .book-info-container'); 
 
     // Loop through each book card to check if it matches the query
     allBooks.forEach(bookCard => {
@@ -326,7 +326,7 @@ searchBar.addEventListener('input', function () {
         ) {
             bookCard.style.display = 'block'; // Show the card if it matches
             bookCard.querySelector('.book-info-container').style.display = 'block'; // Ensure book info is visible
-            bookCard.querySelector('.book-toolbar').style.display = 'flex'; // Ensure toolbar is visible
+            // bookCard.querySelector('.book-toolbar').style.display = 'flex'; // Ensure toolbar is visible
         } else {
             bookCard.style.display = 'none'; // Hide the card if it doesn't match
         }
