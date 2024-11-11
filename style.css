@@ -5,27 +5,6 @@
 * Browsers: last 4 version
 */
 :root {
-    --base-bg: #DADAD9;
-    --bg-font: #161612;
-    --base-fg: #2e3738;
-    --base-fg-transparent: #1b1d1fb3;
-    --base-fg-transparent-hover: #0d1115e4;
-    --fg-font: #EDE6E3;
-    --base-accent: #6d6d50;
-    --base-font: #2e3834;
-    --text-shadow: black;
-    --box-shadow: rgba(55, 54, 54, 0.568);
-    --modal-bg: rgba(234, 235, 236, 0.933);
-    --modal-font: rgb(19, 19, 16);
-    --red: #8b3532;
-    --dark-red: #d1504c;
-    --green: #5CB85C;
-    --dark-green: #439743;
-    /*margins*/
-    --main-margin: 50px;
-}
-
-:root.dark {
     --base-bg: #262622;
     --bg-font: #EDE6E3;
     --base-fg: #b4aca6;
@@ -42,7 +21,8 @@
     --dark-red: #d1504c;
     --green: #467046;
     --dark-green: #439743;
-
+    /*margins*/
+    --main-margin: 50px;
     #footer-tod-logo {
         filter: invert();
     }
@@ -208,55 +188,6 @@ header {
     flex-direction: row;
     text-wrap: nowrap;
 }
-
-#theme-checkbox {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-}
-
-#theme-checkbox-label {
-    /* outline: 1px solid red; */
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    margin-right: 3%;
-    min-height: 60px;
-    min-width: 60px;
-    color: var(--fg-font);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#theme-checkbox-label:hover {
-    #theme-checkbox-span {
-        font-size: 3em;
-        color: var(--base-accent);
-    }
-}
-
-#theme-checkbox-span {
-    font-size: 2.5em;
-    border-radius: 5px;
-}
-
-#theme-checkbox:focus-visible+#theme-checkbox-label {
-    outline: 2px solid var(--base-accent);
-    outline-offset: -4px;
-}
-
 
 #header-h1 {
     padding: 0;

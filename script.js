@@ -5,8 +5,6 @@
   - Accesibility.
 */
 const root = document.documentElement;
-const themeCheckbox = document.querySelector('#theme-checkbox');
-const themeCheckboxSpan = document.querySelector('#theme-checkbox-span');
 const libraryContainer = document.querySelector('#library-container');
 const bookDeleteBtn = document.querySelector('.book-delete-btn');
 
@@ -77,31 +75,6 @@ const myLibrary = [
 ];
 
 refreshLibrary();
-
-if (localStorage.getItem('theme') === 'light') {
-  root.classList.remove('dark');
-  root.classList.add('light');
-  themeCheckboxSpan.textContent = 'dark_mode';
-  themeCheckbox.checked = true;
-} else {
-  root.classList.remove('light');
-  root.classList.add('dark');
-  themeCheckboxSpan.textContent = 'light_mode';
-  themeCheckbox.checked = false;
-};
-
-themeCheckbox.addEventListener('click', () => {
-  console.log(themeCheckbox.checked);
-  if (themeCheckbox.checked) {
-    root.classList = '';
-    themeCheckboxSpan.textContent = 'dark_mode';
-    localStorage.setItem('theme', 'light');
-  } else {
-    root.classList = 'dark';
-    themeCheckboxSpan.textContent = 'light_mode';
-    localStorage.setItem('theme', 'dark');
-  }
-});
 
 addBookBtn.addEventListener('click', () => {
   addBookModal.showModal();
@@ -301,34 +274,25 @@ function refreshLibrary() {
 // Search Bar NEED FIXING
 
 const searchBar = document.getElementById('search-bar');
-
-// Listen for user input in the search bar
 searchBar.addEventListener('input', function () {
     const query = searchBar.value.toLowerCase();
-    
-    // Select all existing book cards
-    const allBooks = document.querySelectorAll('.book-card, .book-info-container'); 
+    const allBooks = document.querySelectorAll('.book-card');
 
-    // Loop through each book card to check if it matches the query
     allBooks.forEach(bookCard => {
-        // Select all the necessary elements within the book card
         const title = bookCard.querySelector('h3').textContent.toLowerCase();
         const author = bookCard.querySelector('p').textContent.toLowerCase();
         const year = bookCard.querySelectorAll('p')[1].textContent.toLowerCase();
         const category = bookCard.querySelectorAll('p')[2]?.textContent.toLowerCase() || '';
 
-        // Check if the book matches any of the search criteria
         if (
             title.includes(query) ||
             author.includes(query) ||
             year.includes(query) ||
             category.includes(query)
         ) {
-            bookCard.style.display = 'block'; // Show the card if it matches
-            bookCard.querySelector('.book-info-container').style.display = 'block'; // Ensure book info is visible
-            // bookCard.querySelector('.book-toolbar').style.display = 'flex'; // Ensure toolbar is visible
+            bookCard.style.display = '';
         } else {
-            bookCard.style.display = 'none'; // Hide the card if it doesn't match
+            bookCard.style.display = 'none';
         }
     });
 });
