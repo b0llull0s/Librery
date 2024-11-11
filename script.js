@@ -1,14 +1,6 @@
-/*TODO: 
-  - Handle book cover (Won't do till db).
-  - Bookmark book and sort by bookmark.
-  - Make it compatible.
-  - Accesibility.
-*/
 const root = document.documentElement;
 const libraryContainer = document.querySelector('#library-container');
 const bookDeleteBtn = document.querySelector('.book-delete-btn');
-
-//Add Book
 const addBookModal = document.querySelector("#modal-container");
 const addBookBtn = document.querySelector("#add-book-btn");
 const closeBookModal = document.querySelector("#close-modal-btn");
@@ -224,9 +216,6 @@ function refreshLibrary() {
     bookCategory.classList.add('book-category');
     bookInfoContainer.appendChild(bookCategory);
 
-
-    /* ******************** DELETE MODAL ************************************* */
-
     const deleteModal = document.createElement("dialog");
     deleteModal.classList.add("confirm-delete-modal");
     deleteModal.setAttribute("role", "dialog");
@@ -270,8 +259,6 @@ function refreshLibrary() {
   });
   console.log('Library refreshed.')
 };
-
-// Search Bar NEED FIXING
 
 const searchBar = document.getElementById('search-bar');
 searchBar.addEventListener('input', function () {
