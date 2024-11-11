@@ -1,7 +1,7 @@
 # Librery
 - Librery is an open-source web application for managing a library. It allows users to add, view, and organize book information in an intuitive interface.
 - This project is built with HTML, CSS, and JavaScript, and is intended to be a straightforward and easily customizable tool for book lovers and library enthusiasts.
-- Check out the live demo [here](https://b0llull0s.github.io/Project-Library)
+- Check out the live demo [here](https://b0llull0s.github.io/Librery)
 ## Features
 - Add New Books: Input book details such as title, author, genre, and description.
 - Display Book Information: Organized and responsive info cards that show all relevant details of each book.
