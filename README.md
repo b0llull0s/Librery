@@ -14,4 +14,3 @@
 ## Rute Map
 - Add the Database to ensure data persistence. 
 - Convert the project to a desktop application, making it runnable on Windows, Linux, and potentially MacOS.
-- Manage user authentication.
