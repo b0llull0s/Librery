@@ -9,7 +9,7 @@
 - Search Functionality: Quickly find books by title, author, year or category.
 - Responsive Design: Works on desktop and mobile devices.
 ## Acknowledgments
-- Thank you to [The Odin Project](https://www.theodinproject.com) for the course and assesments that were the cradle to this project!
+- Thanks to [The Odin Project](https://www.theodinproject.com) for the course and assesments that were the cradle to this project!
 - Shout-out to [glovek08](https://github.com/glovek08) for the help and inspiration in this design.
 ## Rute Map
 - Add the Database to ensure data persistence. 
