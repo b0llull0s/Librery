@@ -78,7 +78,7 @@ const myLibrary = [
     year: 1922,
     numberOfPages: 152,
     haveRead: true,
-    cover: "Assets/book-covers/siddhartha.jpg"
+    cover: "Assets/book-covers/Siddhartha.jpg"
   },
   {
     title: "Slaughterhouse-Five",
