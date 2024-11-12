@@ -17,52 +17,124 @@ const myLibrary = [
     cover: "Assets/book-covers/Prelude_to_Foundation_cover.jpg",
   },
   {
-    title: "Taras Bulba",
-    author: "Nikolai Gogol",
-    year: 1835,
-    numberOfPages: 150,
+    title: "2666",
+    author: "Roberto Bolaño",
+    year: 2004,
+    numberOfPages: 1100,
     haveRead: true,
-    cover: "Assets/book-covers/Taras_bulba_cover.jpg",
+    cover: "Assets/book-covers/2666.jpg",
   },
   {
-    title: "The Silmarillion",
-    author: 'J. R. R. Tolkien',
-    year: 1977,
-    numberOfPages: 380,
+    title: "Blindness",
+    author: 'Jose Saramago',
+    year: 1995,
+    numberOfPages: 288,
     haveRead: true,
-    cover: "Assets/book-covers/The_Silmarillion_cover.jpg",
+    cover: "Assets/book-covers/Blindness.jpg",
   },
   {
-    title: "The Teacher",
-    author: "Freida McFadden",
-    year: 2024,
-    numberOfPages: 400,
-    haveRead: false,
-    cover: "Assets/book-covers/The_Teacher_cover.jpg"
-  },
-  {
-    title: "Poor Dad, Poor Dad",
-    author: "Ronald Sashimi",
-    year: 2022,
-    numberOfPages: 420,
-    haveRead: true,
-    cover: "Assets/book-covers/Poor_Dad_Poor_Dad_cover.jpg"
-  },
-  {
-    title: "Eloquent Javascript",
-    author: "Marijn Haverbeke",
-    year: 2014,
+    title: "Cathedral",
+    author: "Raymond Carver",
+    year: 1983,
     numberOfPages: 228,
-    haveRead: false,
-    cover: "Assets/book-covers/Eloquent_Javascript.jpg"
+    haveRead: true,
+    cover: "Assets/book-covers/cathedral.jpg"
   },
   {
-    title: "A Smarter Way to Learn HTML & CSS",
-    author: "Mike Myers",
-    year: 2015,
-    numberOfPages: 243,
-    haveRead: false,
-    cover: "Assets/book-covers/A_smarter_way_to_learn_html_&_css.jpg"
+    title: "The Doors Of Perception",
+    author: "Adolf Huxley",
+    year: 1954,
+    numberOfPages: 63,
+    haveRead: true,
+    cover: "Assets/book-covers/doorofperception.png"
+  },
+  {
+    title: "Fight Club",
+    author: "Chuck Palahniuk",
+    year: 1996,
+    numberOfPages: 208,
+    haveRead: true,
+    cover: "Assets/book-covers/fight-club.jpg"
+  },
+  {
+    title: "On The Road",
+    author: "Jack Keruac",
+    year: 1957,
+    numberOfPages: 320,
+    haveRead: true,
+    cover: "Assets/book-covers/on-the-road.jpg"
+  },
+  {
+    title: "Shambhala: The Sacred Path of the Warrior",
+    author: "Chögyam Trungpa",
+    year: 1984,
+    numberOfPages: 227,
+    haveRead: true,
+    cover: "Assets/book-covers/Shambala.jpg"
+  },
+  {
+    title: "Siddhartha",
+    author: "Hermann Hesse",
+    year: 1922,
+    numberOfPages: 152,
+    haveRead: true,
+    cover: "Assets/book-covers/siddhartha.jpg"
+  },
+  {
+    title: "Slaughterhouse-Five",
+    author: "Kurt Vonnegut",
+    year: 1969,
+    numberOfPages: 190,
+    haveRead: true,
+    cover: "Assets/book-covers/slaughter-house-five.jpg"
+  },
+  {
+    title: "One Flew Over the Cuckoo's Nest",
+    author: "Ken Kesey",
+    year: 1962,
+    numberOfPages: 320,
+    haveRead: true,
+    cover: "Assets/book-covers/Someone-flew.jpeg"
+  },
+  {
+    title: "The Art Of War",
+    author: "Sun Tzu",
+    year: -500,
+    numberOfPages: 170,
+    haveRead: true,
+    cover: "Assets/book-covers/The-Art-of-War.jpg"
+  },
+  {
+    title: "The New York Trilogy",
+    author: "Paul Auster",
+    year: 1987,
+    numberOfPages: 478,
+    haveRead: true,
+    cover: "Assets/book-covers/the-new-york-trilogy-books-photo.jpg"
+  },
+  {
+    title: "The Electric Kool-Aid Acid Test",
+    author: "Tom Wolf",
+    year: 1968,
+    numberOfPages: 416,
+    haveRead: true,
+    cover: "Assets/book-covers/acid-test.jpg"
+  },
+  {
+    title: "No Exit",
+    author: "Jean-Paul Sartre",
+    year: 1944,
+    numberOfPages: 66,
+    haveRead: true,
+    cover: "Assets/book-covers/no-exit.jpg"
+  },
+  {
+    title: "Lord Of The Flies",
+    author: "William Golding",
+    year: 1954,
+    numberOfPages: 224,
+    haveRead: true,
+    cover: "Assets/book-covers/Lord-of-Flies.jpg"
   }
 ];
 
